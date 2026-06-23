@@ -11,13 +11,12 @@
 
 
 
-[i][size=medium][color=#808080]Created by [color=#00FF00]YourUsername[/color]  |  Last Updated [color=#00FF00]June 2026[/color][/color][/size][/i]
+[i][size=medium][color=#808080]Created by [color=#00FF00]Clumsy[/color]  |  Last Updated [color=#00FF00]June 2026[/color][/color][/size][/i]
 
+hackforums.net/member.php?action=profile&uid=1936352
 
-
-[hr]
-
-
+A mirror of this exact post and it's format can be found at my github here 
+github.com/SleepTheGod/Hackforums-Formatting-Guide
 
 [color=#FFA500][b]WHAT IS THIS[/b][/color]
 
@@ -54,10 +53,6 @@ A complete, easy-to-reference guide for all MyBB/HackForums BB codes. Whether yo
 
 
 [hr]
-
-
-
-[a name="basics"][/a]
 
 [b][size=large][color=#FF0000]BASIC FORMATTING[/color][/size][/b]
 
@@ -114,9 +109,6 @@ A complete, easy-to-reference guide for all MyBB/HackForums BB codes. Whether yo
 [hr]
 
 
-
-[a name="align"][/a]
-
 [b][size=large][color=#FFA500]TEXT ALIGNMENT[/color][/size][/b]
 
 
@@ -138,9 +130,6 @@ A complete, easy-to-reference guide for all MyBB/HackForums BB codes. Whether yo
 [hr]
 
 
-
-[a name="fonts"][/a]
-
 [b][size=large][color=#FF0000]FONTS[/color][/size][/b]
 
 
@@ -159,17 +148,13 @@ A complete, easy-to-reference guide for all MyBB/HackForums BB codes. Whether yo
 
 [font=Impact]Heavy bold font for titles[/font]
 
-[font=Comic Sans MS]Fun/casual style (use sparingly!)[/font]
+[font=Comic Sans MS]Fun/casual style (use sparingly)[/font]
 
 [/code]
 
 
 
 [hr]
-
-
-
-[a name="lists"][/a]
 
 [b][size=large][color=#FFA500]LISTS[/color][/size][/b]
 
@@ -239,10 +224,6 @@ A complete, easy-to-reference guide for all MyBB/HackForums BB codes. Whether yo
 
 [hr]
 
-
-
-[a name="code"][/a]
-
 [b][size=large][color=#FF0000]CODE & QUOTES[/color][/size][/b]
 
 
@@ -267,15 +248,6 @@ Maintains formatting
 
 [php]<?php echo "PHP with highlighting"; ?>[/php]
 
-[html]<div class="highlighted">HTML code</div>[/html]
-
-[css].selector { color: #FF0000; }[/css]
-
-[js]console.log("JavaScript highlighting");[/js]
-
-[python]print("Python highlighting")[/python]
-
-
 
 [b]Quotes[/b]
 
@@ -289,15 +261,9 @@ Maintains formatting
 
 [quote=Username post=12345]Quote with post reference[/quote]
 
-[/code]
-
 
 
 [hr]
-
-
-
-[a name="links"][/a]
 
 [b][size=large][color=#FFA500]LINKS[/color][/size][/b]
 
@@ -336,10 +302,6 @@ Maintains formatting
 
 
 [hr]
-
-
-
-[a name="media"][/a]
 
 [b][size=large][color=#FF0000]IMAGES & MEDIA[/color][/size][/b]
 
@@ -384,10 +346,6 @@ Maintains formatting
 
 
 [hr]
-
-
-
-[a name="tables"][/a]
 
 [b][size=large][color=#FFA500]TABLES[/color][/size][/b]
 
@@ -489,10 +447,6 @@ Maintains formatting
 
 [hr]
 
-
-
-[a name="spoilers"][/a]
-
 [b][size=large][color=#FF0000]SPOILERS / HIDDEN CONTENT[/color][/size][/b]
 
 
@@ -501,13 +455,13 @@ Maintains formatting
 
 [b]Simple Spoiler[/b]
 
-[spoiler]Hidden content goes here. Click to reveal![/spoiler]
+[spoiler]Hidden content goes here. Click to reveal[/spoiler]
 
 
 
 [b]Named Spoiler[/b]
 
-[spoiler=Click to reveal the secret!]Surprise! Here's the hidden content.[/spoiler]
+[spoiler=Click to reveal the secret]Surprise! Here's the hidden content.[/spoiler]
 
 
 
@@ -533,10 +487,6 @@ Back to main
 
 [hr]
 
-
-
-[a name="advanced"][/a]
-
 [b][size=large][color=#FFA500]ADVANCED POSTING STRUCTURE[/color][/size][/b]
 
 
@@ -549,7 +499,7 @@ Back to main
 
 [b][size=xx-large][color=#FF0000]═══ THREAD TITLE HERE ═══[/color][/size][/b]
 
-[b][size=x-large][color=#FFA500]Subtitle: Brief Description[/color][/size][/b]
+[b][size=x-large][color=#FFA500]Subtitle Brief Description[/color][/size][/b]
 
 
 
@@ -569,7 +519,7 @@ Your introduction content here. Explain what this thread is about and why it mat
 
 [b][color=#FFA500]SECTION 2 MAIN CONTENT[/color][/b]
 
-The meat of your post goes here with proper formatting:
+The meat of your post goes here with proper formatting
 
 
 
@@ -629,11 +579,9 @@ Wrap up your thread with key takeaways and call to action.
 
 
 
-[color=#808080][size=small]Disclaimer: This content is provided for informational purposes. Use responsibly.[/size][/color]
+[color=#808080][size=small]Disclaimer This content is provided for informational purposes. Use responsibly.[/size][/color]
 
-[color=#808080][size=small]Need help? [url=https://example.com]Contact support[/url] | [email]support@example.com[/email][/size][/color]
-
-[/code]
+[color=#808080][size=small]Need help [url=https://example.com]Contact support[/url] | [email]support@example.com[/email][/size][/color]
 
 
 
@@ -707,7 +655,7 @@ Wrap up your thread with key takeaways and call to action.
 
 
 
-[color=#808080][size=small]Cheat Sheet v2.0 | Made for MyBB / HackForums | Copy and paste what you need![/size][/color]
+[color=#808080][size=small]Cheat Sheet v2.0 | Made for MyBB / HackForums | Copy and paste what you need[/size][/color]
 
-[color=#808080][size=small]Bookmark this thread for quick reference | Use responsibly and keep forums clean![/size][/color]
+[color=#808080][size=small]Bookmark this thread for quick reference | Use responsibly and keep forums clean[/size][/color]
 ```
