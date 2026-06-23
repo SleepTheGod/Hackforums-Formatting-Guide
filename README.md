@@ -1,162 +1,129 @@
-[b][size=xx-large][color=#FF0000]HACKFORUMS / MYBB ADVANCED POSTING SYSTEM[/color][/size][/b]
+```md
+[b][size=xx-large][color=#FF0000]HACKFORUMS / MYBB ADVANCED POSTING GUIDE[/color][/size][/b]
+
+[i][color=#808080]Clean structure model for technical threads, exploit writeups, and research posts[/color][/i]
 
 [hr]
 
-[i][size=medium][color=#808080]Professional thread architecture, formatting standards, and exploitation-grade documentation structure[/color][/size][/i]
+[b][size=x-large][color=#FFA500]OVERVIEW[/color][/size][/b]
 
-[hr]
-
-[b][size=x-large][color=#FFA500]SYSTEM OVERVIEW[/color][/size][/b]
-
-This guide defines a structured methodology for producing high-quality MyBB / HackForums threads.
-
-It focuses on:
+This guide defines a stable structure for MyBB / HackForums posts with emphasis on:
 [list]
-[*]Exploit writeups
-[*]Technical tutorials
-[*]Reverse engineering notes
-[*]Tool documentation
-[*]Structured research posts
+[*]Parser-safe BBCode usage
+[*]Technical clarity
+[*]Exploit and research documentation formatting
+[*]Clean hierarchical layout
 [/list]
 
-The goal is consistent readability, reproducibility, and technical clarity.
-
 [hr]
 
-[b][size=x-large][color=#FF0000]THREAD ARCHITECTURE MODEL[/color][/size][/b]
+[b][size=x-large][color=#FF0000]THREAD STRUCTURE MODEL[/color][/size][/b]
 
-All professional threads should follow this structure:
+Recommended order of sections:
 
 [list=1]
-[*]Identity Block
-[*]Abstract / Purpose Definition
-[*]Scope and Constraints
-[*]Methodology / Breakdown
-[*]Implementation / Technical Section
-[*]Evidence / Output / Results
-[*]Mitigations or Analysis (if applicable)
+[*]Title Block
+[*]Abstract
+[*]Scope
+[*]Methodology
+[*]Technical Details
+[*]Results
+[*]Security Impact
 [*]Conclusion
 [/list]
 
-Each section must remain logically isolated using:
-
-[code]
-[hr]
-[/code]
-
----
-
 [hr]
 
-[b][size=x-large][color=#FFA500]IDENTITY BLOCK STANDARD[/color][/size][/b]
-
-This is the top-of-thread format used for all serious posts.
+[b][size=x-large][color=#FFA500]TITLE BLOCK STANDARD[/color][/size][/b]
 
 [code]
 [b][size=xx-large]THREAD TITLE[/size][/b]
 
-[i][color=#808080]Author: Handle | Classification: Public / Private Research | Date: YYYY-MM[/color][/i]
+[i][color=#808080]Author: Handle | Date: YYYY-MM | Classification: Public / Research[/color][/i]
+[/code]
+
+Rule:
+Keep all styling inside the title block only.
 
 [hr]
+
+[b][size=x-large][color=#FFA500]FORMATTING RULESET[/color][/size][/b]
+
+Color semantics:
+
+[code]
+#FF0000 = critical / exploit / risk
+#FFA500 = structure headers
+#0088FF = technical references
+#808080 = metadata
 [/code]
 
 Rules:
 [list]
-[*]No emojis
-[*]No decorative ASCII banners
-[*]Minimal color usage (red/orange/gray only)
+[*]Do not mix multiple semantic colors in same line
+[*]Do not color entire paragraphs
+[*]Use color only for headers or labels
 [/list]
 
----
-
 [hr]
 
-[b][size=x-large][color=#FF0000]FORMATTING ENGINE RULESET[/color][/size][/b]
+[b][size=x-large][color=#FF0000]TECHNICAL CONTENT BLOCKS[/color][/size][/b]
 
-[b]Hierarchy system:[/b]
+All technical material must be isolated.
 
-[list]
-[*]xx-large → Title only
-[*]x-large → Major sections
-[*]large → Subsections
-[*]medium → inline emphasis (rare use)
-[/list]
-
-[b]Color semantics:[/b]
+[b]Standard code block:[/b]
 
 [code]
-#FF0000 → Critical / exploit / warnings
-#FFA500 → Section headers / structure
-#0088FF → Technical references / optional info
-#808080 → Metadata / non-essential context
+function test(input) {
+    return input;
+}
 [/code]
 
-[b]Rule:[/b] If everything is highlighted, nothing is highlighted.
+[b]Language blocks:[/b]
 
----
+[php]<?php echo "test"; ?>[/php]
+[js]console.log("test");[/js]
+[python]print("test")[/python]
+
+Rule:
+Do not mix BBCode formatting inside code blocks.
 
 [hr]
 
-[b][size=x-large][color=#FFA500]TECHNICAL CONTENT BLOCKS[/color][/size][/b]
-
-All technical material must be isolated into structured blocks.
-
-[b]Code formatting standard:[/b]
+[b][size=x-large][color=#FFA500]EXPLOIT / RESEARCH TEMPLATE[/color][/size][/b]
 
 [code]
-[code]
-raw logic, pseudocode, or config
-[/code]
-[/code]
+[b][size=x-large]TITLE[/size][/b]
 
-[b]Language-specific blocks:[/b]
-
-[php]<?php system("id"); ?>[/php]
-[js]fetch("/api/v1");[/js]
-[python]import os; os.system("id")[/python]
-
-[b]Rule of usage:[/b]
-Code blocks must contain only executable or logically relevant material.
-
----
+[i]Short description[/i]
 
 [hr]
 
-[b][size=x-large][color=#FF0000]EXPLOIT / RESEARCH WRITEUP TEMPLATE[/color][/size][/b]
-
-[code]
-[b][size=xx-large]TITLE[/size][/b]
-
-[i]Short classification line[/i]
+[b]ABSTRACT[/b]
+High level explanation of behavior or vulnerability.
 
 [hr]
 
-[b][color=#FFA500]ABSTRACT[/color][/b]
-High-level explanation of the issue, vulnerability class, or tool behavior.
-
-[hr]
-
-[b][color=#FFA500]SCOPE[/color][/b]
+[b]SCOPE[/b]
 [list]
 [*]Target system
 [*]Version range
-[*]Environment constraints
+[*]Environment
 [/list]
 
 [hr]
 
-[b][color=#FFA500]METHODOLOGY[/color][/b]
-Step-by-step breakdown of discovery or execution.
+[b]METHODOLOGY[/b]
 
-[code]
-Step 1: Recon
-Step 2: Analysis
-Step 3: Reproduction
-[/code]
+[list=1]
+[*]Recon
+[*]Analysis
+[*]Reproduction
+[/list]
 
 [hr]
 
-[b][color=#FFA500]TECHNICAL BREAKDOWN[/color][/b]
+[b]TECHNICAL BREAKDOWN[/b]
 
 [code]
 function vulnerable(input):
@@ -165,111 +132,83 @@ function vulnerable(input):
 
 [hr]
 
-[b][color=#FFA500]RESULTS[/color][/b]
-Observed output or behavior.
+[b]RESULTS[/b]
+Observed behavior output or system response.
 
 [hr]
 
-[b][color=#FF0000]SECURITY IMPLICATIONS[/color][/b]
-Impact classification and risk explanation.
+[b][color=#FF0000]SECURITY IMPACT[/color][/b]
+Risk classification and potential exploitation impact.
 
 [hr]
 
-[b][color=#808080]END OF REPORT[/color][/color][/b]
+[b]CONCLUSION[/b]
+Summary of findings and final notes.
 [/code]
 
----
-
 [hr]
 
-[b][size=x-large][color=#FFA500]LIST ENGINEERING[/color][/size][/b]
+[b][size=x-large][color=#FFA500]LIST USAGE RULES[/color][/size][/b]
 
-[b]Structured list usage:[/b]
+Correct usage:
 
 [code]
-[list=1]
-[*]Atomic step one
-[*]Atomic step two
-[*]Atomic step three
+[list]
+[*]Single atomic point
+[*]Single atomic point
+[*]Single atomic point
 [/list]
 [/code]
 
-[b]Rules:[/b]
+Rules:
 [list]
-[*]Never mix multiple actions per bullet
-[*]Avoid paragraphs inside list items
-[*]Use lists for procedural clarity only
+[*]One idea per bullet
+[*]No paragraphs inside list items
+[*]No nested complexity beyond 2 levels
 [/list]
-
----
 
 [hr]
 
-[b][size=x-large][color=#FF0000]MEDIA INTEGRATION RULESET[/color][/size][/b]
+[b][size=x-large][color=#FFA500]MEDIA USAGE[/color][/size][/b]
 
-[b]Image usage:[/b]
+Images:
 
 [code]
 [img]https://example.com/image.jpg[/img]
 [/code]
 
-[b]Resizing rule:[/b]
+Resized images:
 
 [code]
 [img=600x300]https://example.com/image.jpg[/img]
 [/code]
 
-[b]Constraints:[/b]
+Video:
+
+[code]
+[youtube]VIDEO_ID[/youtube]
+[/code]
+
+Rules:
 [list]
-[*]Images must support technical content
-[*]No decorative-only media in exploit writeups
-[*]Keep media placement inside dedicated sections
-[/list]
-
----
-
-[hr]
-
-[b][size=x-large][color=#FFA500]ADVANCED THREAD DESIGN PRINCIPLES[/color][/size][/b]
-
-[list]
-[*]Information density over decoration
-[*]Hierarchical structure over narrative writing
-[*]Minimal color usage for signal clarity
-[*]Code-first explanation model
-[*]Section isolation using hr separators
-[*]No redundant phrasing
-[/list]
-
----
-
-[hr]
-
-[b][size=x-large][color=#FF0000]COMMON ERRORS IN NEW USERS[/color][/size][/b]
-
-[list]
-[*]Over-coloring entire posts
-[*]Writing paragraphs instead of structured sections
-[*]Embedding code inside normal text blocks
-[*]Lack of separation between explanation and implementation
-[*]Using decorative ASCII banners
-[/list]
-
----
-
-[hr]
-
-[b][size=x-large][color=#FFA500]FINAL STANDARD[/color][/size][/b]
-
-A high-quality HackForums post is defined by:
-
-[list]
-[*]Structural clarity
-[*]Reproducibility
-[*]Minimal formatting noise
-[*]Technical precision
+[*]Media must support technical content
+[*]Do not use media for decoration
+[*]Keep media isolated in sections
 [/list]
 
 [hr]
 
-[color=#808080][size=small]MyBB Advanced Posting System 2026 Edition[/size][/color]
+[b][size=x-large][color=#FFA500]LAYOUT STABILITY RULES[/color][/size][/b]
+
+[list]
+[*]Do not overuse [hr]
+[*]Do not nest BBCode inside [code]
+[*]Keep hierarchy linear
+[*]Separate explanation from implementation
+[*]Avoid redundant styling
+[/list]
+
+[hr]
+
+[color=#808080][size=small]MyBB Advanced Posting System 2026 Stable Build[/size][/color]
+```
