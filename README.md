@@ -1,214 +1,713 @@
 ```md
-[b][size=xx-large][color=#FF0000]HACKFORUMS / MYBB ADVANCED POSTING GUIDE[/color][/size][/b]
+[b][size=x-large][color=#FF0000]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/color][/size][/b]
 
-[i][color=#808080]Clean structure model for technical threads, exploit writeups, and research posts[/color][/i]
+[b][size=x-large][color=#FF0000]   MYBB / HACKFORUMS POSTING CHEAT SHEET   [/color][/size][/b]
+
+[b][size=x-large][color=#FF0000]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/color][/size][/b]
+
+
+
+[b][size=large][color=#FFA500]The Ultimate BB Code Reference for Professional Forum Posts[/color][/size][/b]
+
+
+
+[i][size=medium][color=#808080]Created by [color=#00FF00]YourUsername[/color]  |  Last Updated [color=#00FF00]June 2026[/color][/color][/size][/i]
+
+
 
 [hr]
 
-[b][size=x-large][color=#FFA500]OVERVIEW[/color][/size][/b]
 
-This guide defines a stable structure for MyBB / HackForums posts with emphasis on:
+
+[color=#FFA500][b]WHAT IS THIS[/b][/color]
+
+A complete, easy-to-reference guide for all MyBB/HackForums BB codes. Whether you're posting tutorials, sharing resources, or creating detailed threads, this cheat sheet has everything you need to format like a pro.
+
+
+
+[color=#00FF00][b]QUICK NAVIGATION[/b][/color]
+
 [list]
-[*]Parser-safe BBCode usage
-[*]Technical clarity
-[*]Exploit and research documentation formatting
-[*]Clean hierarchical layout
+
+[*][url=#basics]Basic Formatting[/url]
+
+[*][url=#align]Text Alignment[/url]
+
+[*][url=#fonts]Fonts[/url]
+
+[*][url=#lists]Lists[/url]
+
+[*][url=#code]Code & Quotes[/url]
+
+[*][url=#links]Links[/url]
+
+[*][url=#media]Images & Media[/url]
+
+[*][url=#tables]Tables[/url]
+
+[*][url=#spoilers]Spoilers[/url]
+
+[*][url=#advanced]Advanced Structure[/url]
+
 [/list]
 
+
+
 [hr]
 
-[b][size=x-large][color=#FF0000]THREAD STRUCTURE MODEL[/color][/size][/b]
 
-Recommended order of sections:
+
+[a name="basics"][/a]
+
+[b][size=large][color=#FF0000]BASIC FORMATTING[/color][/size][/b]
+
+
+
+[code]
+
+[b]Bold Text[/b]              →  Bold Text
+
+[i]Italic Text[/i]            →  Italic Text
+
+[u]Underlined Text[/u]        →  Underlined Text
+
+[s]Strikethrough Text[/s]    →  Strikethrough Text
+
+
+
+[color=#FF0000]Red Text[/color]             →  Colored text
+
+[color=#00FF00]Green Text[/color]           →  Colored text
+
+[color=#0088FF]Blue Text[/color]            →  Colored text
+
+
+
+[size=xx-small]Tiny[/size]      →  Various sizes
+
+[size=x-small]Extra Small[/size]
+
+[size=small]Small[/size]
+
+[size=medium]Medium[/size]
+
+[size=large]Large[/size]
+
+[size=x-large]Extra Large[/size]
+
+[size=xx-large]Huge[/size]
+
+[/code]
+
+
+
+[b]Example Usage[/b]
+
+[code]
+
+[color=#FF0000][b][size=large]IMPORTANT[/size][/b][/color] [color=#00FF00]This is a success message[/color]
+
+[/code]
+
+
+
+[hr]
+
+
+
+[a name="align"][/a]
+
+[b][size=large][color=#FFA500]TEXT ALIGNMENT[/color][/size][/b]
+
+
+
+[code]
+
+[align=left]Left aligned text (default)[/align]
+
+[align=center]Centered text - great for titles[/align]
+
+[align=right]Right aligned text[/align]
+
+[align=justify]Justified text - nice for long paragraphs that need clean edges[/align]
+
+[/code]
+
+
+
+[hr]
+
+
+
+[a name="fonts"][/a]
+
+[b][size=large][color=#FF0000]FONTS[/color][/size][/b]
+
+
+
+[code]
+
+[font=Arial]Clean and professional[/font]
+
+[font=Times New Roman]Classic serif style[/font]
+
+[font=Courier New]Monospace - great for code-like text[/font]
+
+[font=Verdana]Wide and readable[/font]
+
+[font=Georgia]Elegant serif font[/font]
+
+[font=Impact]Heavy bold font for titles[/font]
+
+[font=Comic Sans MS]Fun/casual style (use sparingly!)[/font]
+
+[/code]
+
+
+
+[hr]
+
+
+
+[a name="lists"][/a]
+
+[b][size=large][color=#FFA500]LISTS[/color][/size][/b]
+
+
+
+[code]
+
+[b]Bullet List (default)[/b]
+
+[list]
+
+[]First point with no marker
+
+[*]Standard bullet point
+
+[*]Another bullet point
+
+[*]Third bullet point
+
+[/list]
+
+
+
+[b]Numbered List[/b]
 
 [list=1]
-[*]Title Block
-[*]Abstract
-[*]Scope
-[*]Methodology
-[*]Technical Details
-[*]Results
-[*]Security Impact
-[*]Conclusion
+
+[*]First numbered item
+
+[*]Second numbered item
+
+[*]Third numbered item
+
 [/list]
 
-[hr]
 
-[b][size=x-large][color=#FFA500]TITLE BLOCK STANDARD[/color][/size][/b]
 
-[code]
-[b][size=xx-large]THREAD TITLE[/size][/b]
+[b]Alphabetical List[/b]
 
-[i][color=#808080]Author: Handle | Date: YYYY-MM | Classification: Public / Research[/color][/i]
-[/code]
+[list=a]
 
-Rule:
-Keep all styling inside the title block only.
+[*]First letter item
 
-[hr]
+[*]Second letter item
 
-[b][size=x-large][color=#FFA500]FORMATTING RULESET[/color][/size][/b]
+[*]Third letter item
 
-Color semantics:
-
-[code]
-#FF0000 = critical / exploit / risk
-#FFA500 = structure headers
-#0088FF = technical references
-#808080 = metadata
-[/code]
-
-Rules:
-[list]
-[*]Do not mix multiple semantic colors in same line
-[*]Do not color entire paragraphs
-[*]Use color only for headers or labels
 [/list]
 
-[hr]
 
-[b][size=x-large][color=#FF0000]TECHNICAL CONTENT BLOCKS[/color][/size][/b]
 
-All technical material must be isolated.
+[b]Roman Numeral List[/b]
 
-[b]Standard code block:[/b]
+[list=i]
 
-[code]
-function test(input) {
-    return input;
-}
-[/code]
+[*]Roman numeral i
 
-[b]Language blocks:[/b]
+[*]Roman numeral ii
 
-[php]<?php echo "test"; ?>[/php]
-[js]console.log("test");[/js]
-[python]print("test")[/python]
+[*]Roman numeral iii
 
-Rule:
-Do not mix BBCode formatting inside code blocks.
-
-[hr]
-
-[b][size=x-large][color=#FFA500]EXPLOIT / RESEARCH TEMPLATE[/color][/size][/b]
-
-[code]
-[b][size=x-large]TITLE[/size][/b]
-
-[i]Short description[/i]
-
-[hr]
-
-[b]ABSTRACT[/b]
-High level explanation of behavior or vulnerability.
-
-[hr]
-
-[b]SCOPE[/b]
-[list]
-[*]Target system
-[*]Version range
-[*]Environment
 [/list]
 
-[hr]
-
-[b]METHODOLOGY[/b]
-
-[list=1]
-[*]Recon
-[*]Analysis
-[*]Reproduction
-[/list]
-
-[hr]
-
-[b]TECHNICAL BREAKDOWN[/b]
-
-[code]
-function vulnerable(input):
-    return exec(input)
 [/code]
 
-[hr]
 
-[b]RESULTS[/b]
-Observed behavior output or system response.
 
 [hr]
 
-[b][color=#FF0000]SECURITY IMPACT[/color][/b]
-Risk classification and potential exploitation impact.
 
-[hr]
 
-[b]CONCLUSION[/b]
-Summary of findings and final notes.
-[/code]
+[a name="code"][/a]
 
-[hr]
+[b][size=large][color=#FF0000]CODE & QUOTES[/color][/size][/b]
 
-[b][size=x-large][color=#FFA500]LIST USAGE RULES[/color][/size][/b]
 
-Correct usage:
 
 [code]
-[list]
-[*]Single atomic point
-[*]Single atomic point
-[*]Single atomic point
-[/list]
+
+[b]Generic Code Block[/b]
+
+[code]
+
+Your code here
+
+Multiple lines
+
+Maintains formatting
+
 [/code]
 
-Rules:
-[list]
-[*]One idea per bullet
-[*]No paragraphs inside list items
-[*]No nested complexity beyond 2 levels
-[/list]
+
+
+[b]Syntax Highlighting[/b]
+
+[php]<?php echo "PHP with highlighting"; ?>[/php]
+
+[html]<div class="highlighted">HTML code</div>[/html]
+
+[css].selector { color: #FF0000; }[/css]
+
+[js]console.log("JavaScript highlighting");[/js]
+
+[python]print("Python highlighting")[/python]
+
+
+
+[b]Quotes[/b]
+
+[quote]Generic quoted text[/quote]
+
+
+
+[quote=Username]Quote with username attribution[/quote]
+
+
+
+[quote=Username post=12345]Quote with post reference[/quote]
+
+[/code]
+
+
 
 [hr]
 
-[b][size=x-large][color=#FFA500]MEDIA USAGE[/color][/size][/b]
 
-Images:
+
+[a name="links"][/a]
+
+[b][size=large][color=#FFA500]LINKS[/color][/size][/b]
+
+
 
 [code]
+
+[b]Basic Links[/b]
+
+[url]https://example.com[/url]
+
+
+
+[b]Named Links[/b]
+
+[url=https://example.com]Click here to visit Example[/url]
+
+
+
+[b]Email Links[/b]
+
+[email]email@example.com[/email]
+
+[email=email@example.com]Send me an email[/email]
+
+
+
+[b]Internal Links[/b]
+
+[thread=12345]Link to another thread[/thread]
+
+[post=67890]Link to a specific post[/post]
+
+[/code]
+
+
+
+[hr]
+
+
+
+[a name="media"][/a]
+
+[b][size=large][color=#FF0000]IMAGES & MEDIA[/color][/size][/b]
+
+
+
+[code]
+
+[b]Standard Image[/b]
+
 [img]https://example.com/image.jpg[/img]
+
+
+
+[b]Resized Image[/b]
+
+[img=300x200]https://example.com/image.jpg[/img]
+
+
+
+[b]Aligned Image[/b]
+
+[img align=left]https://example.com/image.jpg[/img] Text wraps around image
+
+[img align=right]https://example.com/image.jpg[/img] Text wraps around image
+
+
+
+[b]Video Embedding[/b]
+
+[youtube]https://www.youtube.com/watch?v=VIDEO_ID[/youtube]
+
+[video]https://example.com/video.mp4[/video]
+
+
+
+[b]Audio[/b]
+
+[audio]https://example.com/audio.mp3[/audio]
+
 [/code]
 
-Resized images:
 
-[code]
-[img=600x300]https://example.com/image.jpg[/img]
-[/code]
-
-Video:
-
-[code]
-[youtube]VIDEO_ID[/youtube]
-[/code]
-
-Rules:
-[list]
-[*]Media must support technical content
-[*]Do not use media for decoration
-[*]Keep media isolated in sections
-[/list]
 
 [hr]
 
-[b][size=x-large][color=#FFA500]LAYOUT STABILITY RULES[/color][/size][/b]
 
-[list]
-[*]Do not overuse [hr]
-[*]Do not nest BBCode inside [code]
-[*]Keep hierarchy linear
-[*]Separate explanation from implementation
-[*]Avoid redundant styling
-[/list]
+
+[a name="tables"][/a]
+
+[b][size=large][color=#FFA500]TABLES[/color][/size][/b]
+
+
+
+[code]
+
+[b]Basic Table[/b]
+
+[table]
+
+[tr]
+
+[td]Row 1, Cell 1[/td]
+
+[td]Row 1, Cell 2[/td]
+
+[td]Row 1, Cell 3[/td]
+
+[/tr]
+
+[tr]
+
+[td]Row 2, Cell 1[/td]
+
+[td]Row 2, Cell 2[/td]
+
+[td]Row 2, Cell 3[/td]
+
+[/tr]
+
+[/table]
+
+
+
+[b]Table with Header Cells[/b]
+
+[table]
+
+[tr]
+
+[th]Header 1[/th]
+
+[th]Header 2[/th]
+
+[th]Header 3[/th]
+
+[/tr]
+
+[tr]
+
+[td]Data 1[/td]
+
+[td]Data 2[/td]
+
+[td]Data 3[/td]
+
+[/tr]
+
+[/table]
+
+
+
+[b]Colspan & Rowspan[/b]
+
+[table]
+
+[tr]
+
+[td colspan=2]This cell spans 2 columns[/td]
+
+[td]Single cell[/td]
+
+[/tr]
+
+[tr]
+
+[td rowspan=2]Spans 2 rows[/td]
+
+[td]Cell 2[/td]
+
+[td]Cell 3[/td]
+
+[/tr]
+
+[tr]
+
+[td]Cell 2[/td]
+
+[td]Cell 3[/td]
+
+[/tr]
+
+[/table]
+
+[/code]
+
+
 
 [hr]
 
-[color=#808080][size=small]MyBB Advanced Posting System 2026 Stable Build[/size][/color]
+
+
+[a name="spoilers"][/a]
+
+[b][size=large][color=#FF0000]SPOILERS / HIDDEN CONTENT[/color][/size][/b]
+
+
+
+[code]
+
+[b]Simple Spoiler[/b]
+
+[spoiler]Hidden content goes here. Click to reveal![/spoiler]
+
+
+
+[b]Named Spoiler[/b]
+
+[spoiler=Click to reveal the secret!]Surprise! Here's the hidden content.[/spoiler]
+
+
+
+[b]Nested Spoilers[/b]
+
+[spoiler=Main Topic]
+
+Main content here
+
+[spoiler=Sub-topic]
+
+Sub-content here
+
+[/spoiler]
+
+Back to main
+
+[/spoiler]
+
+[/code]
+
+
+
+[hr]
+
+
+
+[a name="advanced"][/a]
+
+[b][size=large][color=#FFA500]ADVANCED POSTING STRUCTURE[/color][/size][/b]
+
+
+
+[color=#FF0000][b]COMPLETE THREAD TEMPLATE[/b][/color]
+
+
+
+[code]
+
+[b][size=xx-large][color=#FF0000]═══ THREAD TITLE HERE ═══[/color][/size][/b]
+
+[b][size=x-large][color=#FFA500]Subtitle: Brief Description[/color][/size][/b]
+
+
+
+[i][size=medium][color=#808080]Posted By [color=#00FF00]YourUsername[/color] | [color=#0088FF]Date MM/DD/YYYY[/color][/color][/size][/i]
+
+
+
+[hr]
+
+
+
+[b][color=#FF0000]SECTION 1 INTRODUCTION[/color][/b]
+
+Your introduction content here. Explain what this thread is about and why it matters.
+
+
+
+[b][color=#FFA500]SECTION 2 MAIN CONTENT[/color][/b]
+
+The meat of your post goes here with proper formatting:
+
+
+
+[list]
+
+[*]First key point with [b]bold emphasis[/b]
+
+[*]Second key point with [i]italic details[/i]
+
+[*]Third important point
+
+[/list]
+
+
+
+[code]
+
+function example() {
+
+    // Code examples should be in code blocks
+
+    echo "Hello World!";
+
+}
+
+[/code]
+
+
+
+[spoiler=Click for Additional Details]
+
+Extra content that doesn't need to be visible immediately
+
+[/spoiler]
+
+
+
+[b][color=#00FF00]SECTION 3 CONCLUSION[/color][/b]
+
+Wrap up your thread with key takeaways and call to action.
+
+
+
+[list=1]
+
+[*]Summary point one
+
+[*]Summary point two
+
+[*]Final thought
+
+[/list]
+
+
+
+[hr]
+
+
+
+[color=#808080][size=small]Disclaimer: This content is provided for informational purposes. Use responsibly.[/size][/color]
+
+[color=#808080][size=small]Need help? [url=https://example.com]Contact support[/url] | [email]support@example.com[/email][/size][/color]
+
+[/code]
+
+
+
+[hr]
+
+
+
+[b][size=large][color=#FF0000]PRO TIPS FOR MYBB POSTING[/color][/size][/b]
+
+
+
+[list=1]
+
+[*][color=#FFA500][b]Use [hr][/b][/color] for clean section breaks to improve readability
+
+[*][color=#FF0000][b]Color coding[/b][/color] Red = warnings/important, Green = success/good, Orange = important notes
+
+[*][color=#0088FF][b]Use [code][/code][/b][/color] for commands, logs, and configuration files
+
+[*][b]Don't overuse colors[/b] - stick to 2-3 colors per post
+
+[*][color=#00FF00][b]Spoiler tags[/b][/color] for long content, sensitive info, or large images
+
+[*][b]Always preview your post[/b] before submitting to catch formatting errors
+
+[*][b]Use list formatting[/b] for better organization of points
+
+[*][b]Proper quoting[/b] helps maintain conversation context when replying
+
+[*][color=#FFA500][b]Header hierarchy[/b][/color] size=x-large for titles, large for sections, medium for sub-sections
+
+[*][b]Add a footer[/b] with [hr] at the end for clean post closure
+
+[/list]
+
+
+
+[hr]
+
+
+
+[b][size=large][color=#FFA500]COLOR REFERENCE[/color][/size][/b]
+
+
+
+[code]
+
+[color=#FF0000]#FF0000 - Bright Red (Warnings/Important)[/color]
+
+[color=#00FF00]#00FF00 - Bright Green (Success/Good)[/color]
+
+[color=#FFA500]#FFA500 - Orange (Important Notes)[/color]
+
+[color=#0088FF]#0088FF - Blue (Links/Info)[/color]
+
+[color=#FF00FF]#FF00FF - Magenta (Special/Hightlight)[/color]
+
+[color=#FFFF00]#FFFF00 - Yellow (Caution)[/color]
+
+[color=#808080]#808080 - Gray (Meta/Footer)[/color]
+
+[color=#FFFFFF]#FFFFFF - White (Dark mode text)[/color]
+
+[color=#000000]#000000 - Black (Light mode text)[/color]
+
+[/code]
+
+
+
+[hr]
+
+
+
+[color=#808080][size=small]Cheat Sheet v2.0 | Made for MyBB / HackForums | Copy and paste what you need![/size][/color]
+
+[color=#808080][size=small]Bookmark this thread for quick reference | Use responsibly and keep forums clean![/size][/color]
 ```
